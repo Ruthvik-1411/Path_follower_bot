@@ -3,7 +3,6 @@ int motor1b=9;
 int motor2a=10;
 int motor2b=11;
 
-
 int val1=0;                                  //declaring ir sensor pins and the values obtained
 int val2=0;
 const int ir1=A0;
@@ -46,7 +45,7 @@ else if(val1<500 && val2<500){            //if both the sensors encounter someth
 delay(300);
 
 }
-//the configurations if HIGH and LOW changes according to the connections made
+//the configurations of HIGH and LOW changes according to the connections made
 void backward(){
   digitalWrite(motor1a,HIGH);
   digitalWrite(motor1b,LOW);
